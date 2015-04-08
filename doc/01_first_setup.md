@@ -6,7 +6,7 @@ Install virtualenv:
 
 ```
 pip install virtualenv
-``
+```
 
 Create a virtual enviroment (a sandbox) for the project. From the project
 directory:
