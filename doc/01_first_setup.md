@@ -24,6 +24,15 @@ source venv/bin/activate
 
 See how it adds `(venv)` to our prompt?
 
+We should also tell git to ignore the `venv` directory, so we don't
+accidentally push the dependency files to github. Our project relies on them,
+but they are not part of the project, so we don't want them in the git
+repository.
+
+```
+echo venv > .gitignore
+```
+
 Now we can install Flask from within our virtual enviroment.
 
 ```
