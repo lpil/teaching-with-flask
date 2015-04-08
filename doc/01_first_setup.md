@@ -22,7 +22,8 @@ virtual enviroment we need to source it. (What happens on windows?)
 source venv/bin/activate
 ```
 
-See how it adds `(venv)` to our prompt?
+See how it adds `(venv)` to our prompt? We can disable the virtual enviroment
+with `deactivate` when we're done.
 
 We should also tell git to ignore the `venv` directory, so we don't
 accidentally push the dependency files to github. Our project relies on them,
@@ -46,10 +47,6 @@ pip freeze requirements.txt
 ```
 
 This allows us to get back the exact same set of dependacies again at a later
-date by running this:
-
-```
-pip install -r requirements.txt
-```
+date by running this: `pip install -r requirements.txt`
 
 Marvellous. We're ready to start building stuff.
